@@ -6,3 +6,28 @@
 .block {
 	flex: 0 0 320px;
 }
+	
+.block-header {	
+	height: 38px;	
+	width: 384px;	
+	color: #FFFFFF;	
+	font-family: "Open Sans";	
+	font-size: 18px;	
+	font-weight: 600;	
+	line-height: 30px;
+}	
+
+.block-text {
+	height: 87px;
+	width: 384px;
+	color: #C2C2C2;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
+}
+
+
+body{
+	background-color: #0E1414
+}
