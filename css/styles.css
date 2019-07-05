@@ -1,10 +1,15 @@
 .container {
 	display: flex;
-    flex-flow: row wrap;
+	justify-content: space-between;
+	flex-flow: row wrap
+}
+
+.block-image {
+	width: 100%
 }
 
 .block {
-	flex: 0 0 320px;
+	flex: 1 1 320px;
 }
 	
 .block-header {	
@@ -25,6 +30,16 @@
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 28px;
+}
+
+.block-end-text {
+	height: 29px;
+	width: 94px;
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;
 }
 
 
