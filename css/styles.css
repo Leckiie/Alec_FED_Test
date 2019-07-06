@@ -1,4 +1,4 @@
-.block-container {
+.lower-block-container {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap
@@ -16,6 +16,12 @@
 
 .Lower-Section {
 
+}
+
+
+
+.two-images{
+	display:flex;
 }
 
 .Header-Text {
@@ -39,6 +45,10 @@
 	flex: 1 1 320px;
 }
 	
+.block:not(:last-child){
+	margin-right: 20px;
+}
+
 .block-header {	
 	height: 38px;	
 	width: 384px;	
