@@ -1,5 +1,7 @@
 // Add your styles here
 
+@red: #CF1430;
+
 .top-block-header {
   color: #FFFFFF;
   font-family: "Open Sans", sans-serif;
@@ -20,7 +22,7 @@
 .top-lower-block-header{
   height: 28px;
   width: 384px;
-  color: #CF1430;
+  color: @red;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -97,6 +99,12 @@
   max-width: 384px
 }
 
+.second-block {
+  .block-image {
+    border-bottom: 4px solid @red;
+  }
+}
+
 .column {
   flex: 1 1 320px;
 }
@@ -131,6 +139,12 @@
 
 .second-block {
   margin-top: 228px
+}
+
+.column a {
+  text-decoration: none;
+  padding-bottom: 7px;
+  border-bottom: 1px solid @red;
 }
 
 
