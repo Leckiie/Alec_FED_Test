@@ -12,10 +12,8 @@
 
 
 .top-block-header {
-	height: 39px;
-	width: 384px;
 	color: #FFFFFF;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 26px;
 	font-weight: 300;
 	letter-spacing: 0.5px;
@@ -23,10 +21,8 @@
 }
 
 .top-block-text {
-	height: 298px;
-	width: 384px;
-	color: #FFFFFF;
-	font-family: "Open Sans";
+	color: #C2C2C2;
+	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -36,17 +32,15 @@
 	height: 28px;
 	width: 384px;
 	color: #CF1430;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 28px;
 }
 
 .top-lower-block-text {
-	height: 92px;
-	width: 384px;
 	color: #FFFFFF;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 30px;
@@ -55,14 +49,35 @@
 
 .first-block {
 	display: flex;
-	justify-content: space-between;
-	flex-flow: row wrap
+	justify-content: center;
+	flex-flow: row wrap;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+.columns {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+.reverse-flow-columns {
+	flex-flow: row wrap-reverse;
 }
 
 
 @media (min-width: 992px) {
 	.container-area {
-		padding: 10%
+		padding-top: 178px;
+		/*padding-right: 150px;*/
+		/*padding-left: 150px;*/
+		padding-bottom: 10%;
 	}
 }
 
@@ -70,11 +85,9 @@
 
 }
 
-
-
-
 .two-images{
-	display:flex;
+	display: flex;
+	flex-flow: column;
 }
 
 .Header-Text {
@@ -91,7 +104,8 @@
 }
 
 .block-image {
-	width: 100%
+	width: 100%;
+	max-width: 384px
 }
 
 .column {
@@ -99,22 +113,18 @@
 }
 	
 .column:not(:last-child){
-	margin-right: 20px;
+	margin-right: 24px;
 }
 
 .block-header {	
-	height: 38px;	
-	width: 384px;	
-	color: #FFFFFF;	
+	color: #FFFFFF;
 	font-family: "Open Sans";	
 	font-size: 18px;	
-	font-weight: 600;	
+	font-weight: 500;
 	line-height: 30px;
 }	
 
 .block-text {
-	height: 87px;
-	width: 384px;
 	color: #C2C2C2;
 	font-family: "Open Sans";
 	font-size: 16px;
@@ -123,13 +133,15 @@
 }
 
 .block-end-text {
-	height: 29px;
-	width: 94px;
 	color: #FFFFFF;
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 30px;
+}
+
+.second-block {
+	margin-top: 228px
 }
 
 
