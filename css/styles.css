@@ -1,16 +1,4 @@
 
-@font-face {
-	font-family: "Open Sans";
-	src: url("../fonts/open_sans/OpenSans.woff") format("woff")
-}
-
-@font-face {
-	font-family: "Open Sans";
-	src: url("../fonts/open_sans/OpenSans-light.woff") format("woff");
-	font-weight: 300;
-}
-
-
 .top-block-header {
 	color: #FFFFFF;
 	font-family: "Open Sans", sans-serif;
