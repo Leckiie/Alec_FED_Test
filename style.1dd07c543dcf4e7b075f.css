@@ -1,0 +1,137 @@
+.top-block-header {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+}
+.top-block-text {
+  color: #C2C2C2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.top-lower-block-header {
+  height: 28px;
+  width: 384px;
+  color: #CF1430;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.top-lower-block-text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.first-block {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.first-block img {
+  transition: all 1s ease;
+}
+.first-block img:hover {
+  transform: scale(1.25);
+}
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.reverse-flow-columns {
+  flex-flow: row wrap-reverse;
+}
+@media (min-width: 992px) {
+  .container-area {
+    padding-top: 178px;
+    /*padding-right: 150px;*/
+    /*padding-left: 150px;*/
+    padding-bottom: 10%;
+  }
+}
+.two-images {
+  display: flex;
+  flex-flow: column;
+}
+.Header-Text {
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 0.81px;
+  line-height: 57px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-image {
+  width: 100%;
+  max-width: 384px;
+}
+.second-block .block-image {
+  border-bottom: 4px solid transparent;
+}
+.second-block .block-image:hover {
+  border-bottom-color: #CF1430;
+}
+.column {
+  flex: 1 1 320px;
+}
+.two-images > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.column:not(:last-child) {
+  margin-right: 24px;
+}
+.block-header {
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.block-text {
+  color: #C2C2C2;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.block-end-text {
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.second-block {
+  margin-top: 228px;
+}
+.column a {
+  text-decoration: none;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #CF1430;
+}
+body {
+  background-color: #0E1414;
+}
+.zoom-image-container {
+  overflow: hidden;
+}
+
