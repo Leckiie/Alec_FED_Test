@@ -46,6 +46,14 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+
+  img {
+    transition: all 1s ease;
+  }
+
+  img:hover {
+    transform:scale(1.25);
+  }
 }
 
 .columns {
@@ -113,6 +121,10 @@
   flex: 1 1 320px;
 }
 
+.two-images > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .column:not(:last-child){
   margin-right: 24px;
 }
@@ -154,4 +166,8 @@
 
 body{
   background-color: #0E1414
+}
+
+.zoom-image-container {
+  overflow: hidden;
 }
