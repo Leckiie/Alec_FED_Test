@@ -26,17 +26,11 @@ const cssExtract = new MiniCssExtractPlugin({
 });
 
 // HTML generation
-const generateHTMLPlugins = () => glob.sync('./src/**/*.html').map((dir) => {
-  const filename = path.basename(dir);
-  let template = path.join(__dirname, 'src', filename);
-  console.log(template);
-  return new HTMLWebpackPlugin({
-    filename,
-    template: template,
-    meta: {
-      // viewport: config.viewport,
-    },
-  });
+const html = new HTMLWebpackPlugin({
+  template: 'index.html',
+  meta: {
+    // viewport: config.viewport,
+  },
 });
 
 // Webpack bar
@@ -48,7 +42,7 @@ module.exports = [
   clean,
   // stylelint,
   cssExtract,
-  ...generateHTMLPlugins(),
+  html,
   // fs.existsSync(config.favicon) && favicons,
   // process.env.NODE_ENV === 'production' && optimizeCss,
   // process.env.NODE_ENV === 'production' && robots,
