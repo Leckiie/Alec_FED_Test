@@ -1,16 +1,32 @@
 const webpack = require('webpack');
-const glob = require('glob');
-const path = require('path');
-const fs = require('fs');
+const cssnano = require('cssnano');
 
 const WebpackBar = require('webpackbar');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 // Hot module replacement
 const hmr = new webpack.HotModuleReplacementPlugin();
+
+// Optimize CSS assets
+const optimizeCss = new OptimizeCssAssetsPlugin({
+  assetNameRegExp: /\.css$/g,
+  cssProcessor: cssnano,
+  cssProcessorPluginOptions: {
+    preset: [
+      'default',
+      {
+        discardComments: {
+          removeAll: true,
+        },
+      },
+    ],
+  },
+  canPrint: true,
+});
 
 // Clean webpack
 const clean = new CleanWebpackPlugin({
@@ -43,9 +59,7 @@ module.exports = [
   stylelint,
   cssExtract,
   html,
-  // fs.existsSync(config.favicon) && favicons,
-  // process.env.NODE_ENV === 'production' && optimizeCss,
-  // process.env.NODE_ENV === 'production' && robots,
+  process.env.NODE_ENV === 'production' && optimizeCss,
   webpackBar,
   process.env.NODE_ENV === 'development' && hmr,
 ].filter(Boolean);

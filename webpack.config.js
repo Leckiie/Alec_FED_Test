@@ -26,7 +26,6 @@ module.exports = {
     hot: true,
     open: true,
     port: process.env.PORT || 8000,
-    host: 'localhost',
   },
   module: {
     rules: loaders,
