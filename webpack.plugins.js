@@ -40,7 +40,7 @@ const webpackBar = new WebpackBar({
 
 module.exports = [
   clean,
-  // stylelint,
+  stylelint,
   cssExtract,
   html,
   // fs.existsSync(config.favicon) && favicons,
